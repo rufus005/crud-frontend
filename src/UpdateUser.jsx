@@ -9,6 +9,7 @@ const UpdateUser = () => {
     const [age, setAge] = useState()
     const navigate = useNavigate()
 
+    
     useEffect(() => {
         axios.get('https://crud-backend-r2sp.onrender.com/getUser/'+id)
         .then(result => {
